@@ -1,5 +1,12 @@
 name: CI
-on: [push, pull_request]
+on: 
+  push:
+    branches-ignore:
+      - prod
+  pull_request:
+    branches-ignore:
+      - prod
+
 env:
   DISPLAY: :99
 
