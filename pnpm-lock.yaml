@@ -55,7 +55,7 @@ specifiers:
   ts-jest: 26.5.6
   ts-node: 10.0.0
   typescript: 4.3.2
-  vite: 2.2.4
+  vite: 2.3.6
   vite-plugin-test: 0.0.5
   vue: 3.0.6
   vue-jest: 5.0.0-alpha.10
@@ -124,7 +124,7 @@ devDependencies:
   ts-jest: 26.5.6_jest@26.6.3+typescript@4.3.2
   ts-node: 10.0.0_47e9b49c08b36ff7d323a894942c7b7c
   typescript: 4.3.2
-  vite: 2.2.4
+  vite: 2.3.6
   vite-plugin-test: 0.0.5_d140324f3a321af8622210ef89402c13
   vue-jest: 5.0.0-alpha.10_a76b2288da2ac4f5c13376e8314ff532
   vue-loader: 16.2.0
@@ -6349,8 +6349,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /esbuild/0.9.7:
-    resolution: {integrity: sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==}
+  /esbuild/0.12.6:
+    resolution: {integrity: sha512-RDvVLvAjsq/kIZJoneMiUOH7EE7t2QaW7T3Q7EdQij14+bZbDq5sndb0tTanmHIFSqZVMBMMyqzVHkS3dJobeA==}
     hasBin: true
     requiresBuild: true
     dev: true
@@ -13152,12 +13152,12 @@ packages:
       - typescript
     dev: true
 
-  /vite/2.2.4:
-    resolution: {integrity: sha512-vnIwSNci+phFMp6krhy+FbYzKL0R67Sdt9mVZ96S27AewrApSJjTqncJcalk8sf60BgcbW4+1C6DFIWkxquO9g==}
+  /vite/2.3.6:
+    resolution: {integrity: sha512-fsEpNKDHgh3Sn66JH06ZnUBnIgUVUtw6ucDhlOj1CEqxIkymU25yv1/kWDPlIjyYHnalr0cN6V+zzUJ+fmWHYw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      esbuild: 0.9.7
+      esbuild: 0.12.6
       postcss: 8.2.14
       resolve: 1.20.0
       rollup: 2.47.0
