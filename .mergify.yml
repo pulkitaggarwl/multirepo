@@ -3,7 +3,11 @@ pull_request_rules:
     conditions:
       - "author=renovate[bot]"
       - "status-success=CodeFactor"
-      - "status-success=test"
+      - "status-success=build"
+      - "status-success=e2e"
+      - "status-success=turbine"
+      - "status-success=cockput"
+      - "status-success=coverage"
       - "status-success=binhonglee.GlobeTrotte"
       - "status-success=ci/circleci: build"
       - "status-success=codebeat"
@@ -12,11 +16,31 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-  - name: Approved PRs
+  - name: Approved PRs (binhonglee)
     conditions:
       - "approved-reviews-by=binhonglee"
       - "status-success=CodeFactor"
-      - "status-success=test"
+      - "status-success=build"
+      - "status-success=e2e"
+      - "status-success=turbine"
+      - "status-success=cockput"
+      - "status-success=coverage"
+      - "status-success=binhonglee.GlobeTrotte"
+      - "status-success=ci/circleci: build"
+      - "status-success=codebeat"
+      - "status-success=license/cla"
+    actions:
+      merge:
+        method: squash
+  - name: Approved PRs (samueljklee)
+    conditions:
+      - "approved-reviews-by=samueljklee"
+      - "status-success=CodeFactor"
+      - "status-success=build"
+      - "status-success=e2e"
+      - "status-success=turbine"
+      - "status-success=cockput"
+      - "status-success=coverage"
       - "status-success=binhonglee.GlobeTrotte"
       - "status-success=ci/circleci: build"
       - "status-success=codebeat"
